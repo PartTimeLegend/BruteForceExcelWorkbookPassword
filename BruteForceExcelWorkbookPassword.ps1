@@ -20,7 +20,7 @@
   Purpose/Change: Initial script development
   
 .EXAMPLE
-  ./CreateAzureActionGroupEmailAlerts.ps1 "foo@bar.com" "ag-foo-dev" "rg-foo-dev-eastus" "ag-foo-dev"
+  ./BruteForceExcelWorkbookPassword.ps1 "book1.xlsx" "https://raw.githubusercontent.com/openethereum/wordlist/master/res/wordlist.txt"
 #>
 param (
   [string] $workbookname, 
