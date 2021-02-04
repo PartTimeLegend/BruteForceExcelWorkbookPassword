@@ -39,7 +39,7 @@ foreach($password in Get-Content .\wordlist.txt)
 	  Write-Output "Attempting to open $fullFilePath with $password"
     $excel.Workbooks.Open($FilePath, [Type]::Missing, [Type]::Missing, [Type]::Missing, $password)
     Write-Output "The password for $fullFilePath is $password"
-    return
+    Exit 0
   }
   catch
   {
