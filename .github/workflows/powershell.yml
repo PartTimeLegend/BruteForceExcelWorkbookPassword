@@ -1,0 +1,19 @@
+name: Powershell
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  bruteforce:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Office
+    - run: choco install office365business
+    - name: Run script
+      run: .\BruteForceExcelWorkbookPassword.ps1.ps1
+      shell: powershell
