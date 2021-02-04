@@ -13,12 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Office
-      run: choco install office365business
-    - name: Activate Office
-      working-directory: C:\Program Files (x86)\Microsoft Office\Office16
-      run: cscript ospp.vbs /inpkey:$OFFICE_ACTIVATION_CODE
-      env:
-        OFFICE_ACTIVATION_CODE: ${{secrets.OFFICE_ACTIVATION_CODE}}  
+      run: choco install office2019proplus
+    #- name: Activate Office
+    #  working-directory: C:\Program Files (x86)\Microsoft Office\Office16
+    #  run: cscript ospp.vbs /inpkey:$OFFICE_ACTIVATION_CODE
+    #  env:
+    #    OFFICE_ACTIVATION_CODE: ${{secrets.OFFICE_ACTIVATION_CODE}}  
     - name: Run script
       run: .\BruteForceExcelWorkbookPassword.ps1
       shell: powershell
