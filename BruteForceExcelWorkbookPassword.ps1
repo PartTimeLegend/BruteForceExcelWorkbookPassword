@@ -47,6 +47,13 @@ foreach($password in Get-Content .\wordlist.txt)
   }
   finally
   {
-    $excel.Quit()
+    try
+    {
+      $excel.Quit()
+    }
+    catch
+    {
+      # Empty in case Excel fails.
+    }
   }
 }
