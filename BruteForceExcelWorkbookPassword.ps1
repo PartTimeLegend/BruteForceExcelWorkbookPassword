@@ -18,7 +18,7 @@
   Author:         Antony Bailey <hi@antonybailey.net>
   Creation Date:  2021/02/04
   Purpose/Change: Initial script development
- 
+
 .EXAMPLE
   ./BruteForceExcelWorkbookPassword.ps1 "book1.xlsx" "https://raw.githubusercontent.com/openethereum/wordlist/master/res/wordlist.txt"
 #>
