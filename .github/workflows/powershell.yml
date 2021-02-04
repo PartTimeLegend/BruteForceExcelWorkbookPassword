@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Office
-    - run: choco install office365business
+      run: choco install office365business
     - name: Run script
       run: .\BruteForceExcelWorkbookPassword.ps1.ps1
       shell: powershell
