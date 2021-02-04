@@ -20,5 +20,5 @@ jobs:
     #  env:
     #    OFFICE_ACTIVATION_CODE: ${{secrets.OFFICE_ACTIVATION_CODE}}  
     - name: Run script
-      run: .\BruteForceExcelWorkbookPassword.ps1
+      run: .\BruteForceExcelWorkbookPassword.ps1 "book1.xlsx"
       shell: powershell
