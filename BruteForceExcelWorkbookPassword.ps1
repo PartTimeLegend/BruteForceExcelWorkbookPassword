@@ -34,7 +34,7 @@ foreach($password in Get-Content .\wordlist.txt)
   try
   {
 	  $excel = New-Object -ComObject Excel.Application
-	  $excel.Visible = $true
+	  $excel.Visible = $false
 	  $excel.DisplayAlerts = $false
 	  Write-Output "Attempting to open $fullFilePath with $password"
     $excel.Workbooks.Open($FilePath, [Type]::Missing, [Type]::Missing, [Type]::Missing, $password)
