@@ -1,6 +1,6 @@
 # BruteForceExcelWorkbookPassword
 
-![Powershell](https://github.com/PartTimeLegend/BruteForceExcelWorkbookPassword/workflows/Powershell/badge.svg)
+![Powershell](https://github.com/PartTimeLegend/BruteForceExcelWorkbookPassword/workflows/Powershell/badge.svg) [![Codacy Security Scan](https://github.com/PartTimeLegend/BruteForceExcelWorkbookPassword/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/PartTimeLegend/BruteForceExcelWorkbookPassword/actions/workflows/codacy-analysis.yml)
 
 Ever forgot your password for an Excel Workbook? Me neither! However some people do.
 
