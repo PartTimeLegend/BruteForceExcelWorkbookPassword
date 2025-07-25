@@ -13,7 +13,7 @@ jobs:
         os: [windows-2022, windows-2019]
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install Office
       run: choco install office2019proplus
     #- name: Activate Office
@@ -28,7 +28,7 @@ jobs:
     name: Tag Release
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         fetch-depth: '0'
     - name: Bump version and push tag
